@@ -1,0 +1,9 @@
+# https://superuser.com/questions/623432/transfer-current-command-to-a-detachable-session-tmux-screen/748494#748494
+
+-ctrl z                   # pause the process
+-bg                       # resume it in the background
+-jobs -l
+-# get process number
+-disown PROCESS_NAME
+-tmux
+-reptyr pid
