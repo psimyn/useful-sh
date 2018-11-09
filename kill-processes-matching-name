@@ -1,0 +1,1 @@
+ps -e | grep webpack | grep -v grep | cut -f1 -d " " | xargs kill
